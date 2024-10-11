@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday website</title>
+</head>
+<body>
+    <script>
+        function play(){
+            document.getElementById("player").play();
+
+        }
+        function pause(){
+            document.getElementById("player").pause();
+        }
+    </script>
+    <div class="Video">
+        <video autoplay loop>
+        <source src="img/189916-887039157_small.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="audio">
+        <audio id="player" autoplay loop >
+            <source src="Audio/happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="player">
+        <img src="img/play button.png" alt="Play" width="50px" onclick="play()">
+        <img src="img/pause button.png" alt="Pause" width="50px" onclick="pause()">
+    </div>
+</body>
+</html>
